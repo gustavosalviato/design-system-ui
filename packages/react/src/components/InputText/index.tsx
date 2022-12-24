@@ -11,7 +11,6 @@ export function InputText({ prefix, ...props }: InputTextProps) {
             {!!prefix && <Prefix>{prefix}</Prefix>}
             <Input
                 {...props}
-                placeholder="type your name"
             />
         </InputContainer>
     )
