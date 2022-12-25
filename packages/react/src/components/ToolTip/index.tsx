@@ -1,4 +1,5 @@
 import * as Tooltip from '@radix-ui/react-tooltip';
+
 import { Button } from '../Button';
 import { ArrowRight } from 'phosphor-react'
 import { ToolTipContainer } from './styles';

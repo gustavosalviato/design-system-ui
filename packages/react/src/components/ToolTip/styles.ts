@@ -52,6 +52,8 @@ export const ToolTipContainer = styled(Tooltip.Content, {
         animationName: SlideUpAndFade,
     },
 
+    
+
 
     '.ToolTipArrow': {
         fill: '$gray900',

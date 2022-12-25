@@ -28,6 +28,11 @@ export const Text = styled('p', {
             '8xl': { fontSize: '$8xl' },
             '9xl': { fontSize: '$9xl' },
         },
+
+        weight: {
+            normal: { fontWeight: '$normal' },
+            bold: { fontWeight: '$bold' },
+        }
     },
 
     defaultVariants: {
