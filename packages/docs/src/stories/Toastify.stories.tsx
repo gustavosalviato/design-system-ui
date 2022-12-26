@@ -1,4 +1,4 @@
-import { Button, Toastify, ToastifyProps } from "@ignite-ui/react"
+import { Button, Toastify, ToastifyProps } from "@gh-ignite-ui/react"
 import { useEffect, useRef, useState } from "react"
 import { Meta, StoryObj } from '@storybook/react'
 

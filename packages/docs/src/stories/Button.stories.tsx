@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Button, ButtonProps } from '@ignite-ui/react'
+import { Button, ButtonProps } from '@gh-ignite-ui/react'
 import { GitCommit } from 'phosphor-react'
 
 export default {

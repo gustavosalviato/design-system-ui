@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Box, ToolTip, ToolTipProps, Text, InputText, Flex, Button } from '@ignite-ui/react'
+import { Box, ToolTip, ToolTipProps, Text, InputText, Flex, Button } from '@gh-ignite-ui/react'
 
 export default {
     title: 'Form/ToolTip',

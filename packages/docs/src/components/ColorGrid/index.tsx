@@ -1,4 +1,4 @@
-import { colors } from '@ignite-ui/tokens'
+import { colors } from '@gh-ignite-ui/tokens'
 import { getContrast } from 'polished'
 import { ColorGridContainer } from './styles'
 
