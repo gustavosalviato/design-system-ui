@@ -31,3 +31,6 @@ export function ToolTip({ children, description, ...props }: ToolTipProps) {
         </Tooltip.Provider>
     )
 }
+
+
+ToolTip.displayName = 'ToolTip';

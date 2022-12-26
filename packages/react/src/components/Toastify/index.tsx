@@ -1,36 +1,34 @@
 import * as Toast from '@radix-ui/react-toast';
+import { ComponentProps } from '@stitches/react';
 import { X } from 'phosphor-react';
 import { useState } from 'react';
 import { Text } from '../Text';
-import { ToastContainer, ToastClose, ToastButton } from './styles';
+import { ToastContainer, ToastClose, ToastViewPort } from './styles';
+
+export type ToastifyProps = ComponentProps<typeof ToastContainer> & {
+    title: string,
+    description: string,
+}
 
 
-export function Toastify() {
-    const [open, setOpen] = useState(false);
-
-    function handleOpen() {
-        setOpen(true);
-    }
+export function Toastify({ title, description, ...props }: ToastifyProps) {
 
     return (
         <Toast.Provider swipeDirection='right'>
-            <ToastButton onClick={handleOpen}>
-                Add to Calendar
-            </ToastButton>
 
-            <ToastContainer open={open} onOpenChange={setOpen}>
+            <ToastContainer {...props}>
                 <Toast.Title asChild>
                     <Text
                         size={'xl'}
                         weight={'bold'}
                     >
-                        Agendamento Realizado
+                        {title}
                     </Text>
                 </Toast.Title>
 
                 <Toast.Description asChild>
                     <Text size={'xs'}>
-                        Quarta-feira, 23 de Outubro às 16h
+                        {description}
                     </Text>
                 </Toast.Description>
 
@@ -39,7 +37,9 @@ export function Toastify() {
                 </ToastClose>
             </ToastContainer>
 
-            <Toast.Viewport />
+            <ToastViewPort />
         </Toast.Provider>
     )
 }
+
+Toastify.displayName = 'Toastify';
