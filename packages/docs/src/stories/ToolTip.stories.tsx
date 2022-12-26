@@ -1,10 +1,13 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Box, ToolTip, ToolTipProps, Text, InputText, Flex } from '@ignite-ui/react'
+import { Box, ToolTip, ToolTipProps, Text, InputText, Flex, Button } from '@ignite-ui/react'
 
 export default {
     title: 'Form/ToolTip',
     component: ToolTip,
-    args: {},
+    args: {
+        children: (<Button css={{ marginTop: 8 }}>Hover me</Button>),
+        description: 'This is a description for a ToolTip',
+    },
 
     argTypes: {
         description: {
