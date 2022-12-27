@@ -1,0 +1,2 @@
+import{A as t}from"./index-ad04c7b7.js";import"./index-e4d0bdb7.js";import"./index-f5eaf660.js";import"./es.object.get-own-property-descriptor-b0ef2764.js";import"./index-a9f4a5ea.js";import"./jsx-runtime-71ca1150.js";const c={title:"Data Display/Avatar",component:t,args:{src:"https://avatars.githubusercontent.com/u/75762976?v=4",alt:"Gustavo Salviato"}},p={},e={args:{src:void 0}},l=["Primary","WithFallBack"];export{p as Primary,e as WithFallBack,l as __namedExportsOrder,c as default};
+//# sourceMappingURL=Avatar.stories-a5079b9d.js.map
